@@ -1,10 +1,10 @@
 let showPalette = false; 
 
 // 버튼 위치 및 크기 변수
-let paletteX = 0;           
-let paletteY = 30;    
 let paletteW = 120;  
 let paletteH = 120;
+let paletteX = 0; 
+let paletteY = 15;
 
 let palettePressOffset = 0;
 let paletteBtnAlpha = 255; 
