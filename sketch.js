@@ -9,6 +9,12 @@ let currentAction = "normal";
 let actionStartTime = 0;    // 액션이 시작된 시점의 시간을 저장
 let displayDuration = 3000; // 액션 유지 시간
 
+let bgImage;
+
+function preload() {
+  bgImage = loadImage("home.png"); 
+}
+
 function setup() {
   createCanvas(windowWidth, windowHeight);
 
@@ -18,7 +24,9 @@ function setup() {
 }
 
 function draw() {
-  background(220);
+ if (bgImage) {
+    image(bgImage, 0, 0, width, height); 
+  }
 
   // 창문 그리기 
   drawWindow(250, 170, 250, 180);
